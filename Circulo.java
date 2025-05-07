@@ -1,19 +1,19 @@
 public class Circulo{
-    private int raio;
+    private double raio;
     
-    public Circulo(int raio){
+    public Circulo(double raio){
     this.raio = raio;
 }
 
-    public int calcularArea(){
-        return (int) (3.141516 * raio * raio);
+    public double calcularArea(){
+        return (double) (3.141516f * raio * raio);
     }
 
-    public int calcularPerimetro(){
-        return (int) (2 * 3.141516 * raio);
+    public double calcularPerimetro(){
+        return (double) (2 * 3.141516f * raio);
     }
 
     public void thetwins(){
-        System.out.printf("Raio %d, Área %d, Perimetro %d \n", raio, calcularArea(), calcularPerimetro());
+        System.out.printf("Raio %.2f, Área %.2f, Perimetro %.2f \n", raio, calcularArea(), calcularPerimetro());
     }
 }
