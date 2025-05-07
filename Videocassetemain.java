@@ -1,4 +1,4 @@
-public class Principal{
+public class Videocassetemain{
     public static void main(String[] args){
         Videocassete vc1 = new Videocassete("Tutorial de como respirar", 25.78);
         Videocassete vc2 = new Videocassete("Avengers complete edition", 30.16);
