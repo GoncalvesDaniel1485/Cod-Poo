@@ -71,7 +71,7 @@ public class Funcionario{
                ", telefone: " + telefone  + ", idade: " + idade + ", salario: " + salario;
     }
 
-    public double calculaSalarioLiquido() {
+    public double calculaSalarioLiquido(){
         return salario - (salario * 0.11);
     }
 }
