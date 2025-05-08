@@ -4,12 +4,14 @@ public class Videocassetemain{
         Videocassete vc2 = new Videocassete("Avengers complete edition", 30.16);
         Videocassete vc3 = new Videocassete("Ainda estou aqui", 15.52);
     
-        Videocassete[] videocassetes = {vc1, vc2, vc3};
+        System.out.println("Videocassetes: ");
+        System.out.println(vc1);
+        System.out.println(vc2);
+        System.out.println(vc3);
 
-        for (Videocassete videocassete : videocassetes){
-            System.out.println(videocassete.toString());
-            System.out.printf("Valor do aluguel para 10 dias: R$%.2f%n", videocassete.getValorAluguel(10));
-            System.out.println("------------------------------");
-        }
+        System.out.println("Aluguel em R$: ");
+        System.out.println(vc1.getTitulo() + ": aluguel: " + vc1.getValorAluguel(2));
+        System.out.println(vc2.getTitulo() + ": aluguel: " + vc2.getValorAluguel(2));
+        System.out.println(vc3.getTitulo() + ": aluguel: " + vc3.getValorAluguel(2));
     }
 }
