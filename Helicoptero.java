@@ -9,14 +9,20 @@ public class Helicoptero {
     }
 
 public void entra(){
-    if(capacidade < 20){
+    if(quantidade < capacidade){
         this.quantidade = quantidade + 1;
+    }
+    else{
+        System.out.println("A capacidade máxima foi atingida.");
     }
 }
 
 public void sair(){
-    if(capacidade == 1){
+    if(capacidade >= 1){
         this.quantidade = quantidade - 1;
+    }
+    else{
+        System.out.println("Não é possível remover mais pessoas.");
     }
 }
 
@@ -25,9 +31,9 @@ public void ligar(){
         ligado = true;
     }
 }
-public void decolar(){
+public void decolar(int altura){
     if(ligado == true && altitude == 0){
-        setAltitude(10);
+        altitude = altitude + altura;
 }
 }
 public void aterrissar(){
@@ -69,7 +75,7 @@ public void setQuantidade(int quantidade){
 }
 
 public String toString(){
-    return "O helicótero está: " + ligado + "voando na altura: " + altitude + "com " + 
-    quantidade + "passageiros, obedecendo a capacidade de " + capacidade + "pessoas." ;
+    return "O helicótero está ligado? " + ligado + "\nVoando na altura: " + altitude + "\nCom " + 
+    quantidade + " passageiros, obedecendo a capacidade de " + capacidade + " pessoas." ;
 }
 }
