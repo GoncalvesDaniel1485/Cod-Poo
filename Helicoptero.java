@@ -12,17 +12,11 @@ public void entra(){
     if(quantidade < capacidade){
         this.quantidade = quantidade + 1;
     }
-    else{
-        System.out.println("A capacidade máxima foi atingida.");
-    }
 }
 
 public void sair(){
     if(capacidade >= 1){
         this.quantidade = quantidade - 1;
-    }
-    else{
-        System.out.println("Não é possível remover mais pessoas.");
     }
 }
 
