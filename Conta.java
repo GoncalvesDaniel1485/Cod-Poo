@@ -31,11 +31,11 @@ public void ativar(){
 }
 
 public String exibir(){
-    return "Saldo: " + saldo + "\nNome do usuário: " + nome_cliente + "\nConta de número: " + numero_conta + "\nA conta está ativa? "  + ativa;
+    return "\nSaldo: " + saldo + "\nNome do usuário: " + nome_cliente + "\nConta de número: " + numero_conta + "\nA conta está ativa? "  + ativa;
 }
 
-public boolean getLigado(){
-    return ligado;
+public boolean getAtiva(){
+    return ativa;
 }
 public double getSaldo(){
     return saldo;
