@@ -39,7 +39,10 @@ public static void main(String args[]){
     System.out.println(c2.exibir());
     System.out.println(c3.exibir());
 
+    c3.desativar();
     c1.desativar();
+
+    System.out.println(c1.exibir() + c2.exibir() + c3.exibir());
 
 
 
