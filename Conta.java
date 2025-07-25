@@ -15,7 +15,7 @@ public void depositar(double depositar){
     }
 public void sacar(double sacar){
     if(sacar <= saldo && ativa == true){
-        saldo = saldo + sacar;
+        saldo = saldo - sacar;
     }
 }
 
