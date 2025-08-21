@@ -5,12 +5,14 @@ public class Principal {
         Aluno c = new Aluno("Antônio", 3, 4.0, 6.0);
         Turma turma = new Turma(5);
 
+        //adicionar alunos no vetor
         turma.adicionar(a); turma.adicionar(b); turma.adicionar(c);
 
+        System.out.println("Listar todos os alunos: \n");
         turma.listarAlunos();
-        
-
-        
+    
+        System.out.println("Buscar por matrícula: \n");
+        turma.buscarPorMatricula(2);
     }
 
 }
