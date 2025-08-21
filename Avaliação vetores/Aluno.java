@@ -23,10 +23,14 @@ public class Aluno{
         }
     }
 
-    public void exibirInfo(){
-        System.out.println("Nome: " + nome + "\nMatricula: " + matricula + "\nNotas: " + 
+    public String toString(){
+        return "Nome: " + nome + "\nMatricula: " + matricula  + 
         "\nNota 1: " + nota_1 + "\nNota 2: " + nota_2 + "\nMedia: " + calcularMedia() 
-        + "\nSituação: " + situacao() + "\n");
+        + "\nSituação: " + situacao() + "\n";
+    }
+
+    public void exibirInfo(){
+        System.out.println(toString());
     }
 
     public int getMatricula(){
