@@ -7,22 +7,24 @@ public class Turma{
         this.alunos = new Aluno[quantidade];
     }
 
-    public boolean adicionar(Aluno a){
-        if(quantidade == this.alunos.length) return false;
-        this.alunos[this.quantidade++] = a;
-        return true;
+    public void adicionar(Aluno a){
+        if(quantidade < alunos.length) 
+        alunos[quantidade++] = a;
+       
     }
 
     public void listarAlunos(){
-        for(Aluno a : this.alunos){
+        for(Aluno a : alunos){
+            if(a != null)
             a.exibirInfo();
         }
     }
 
     public Aluno buscarPorMatricula(int matricula){
-        for(Aluno a : this.alunos){
-            if(a.getMatricula() == matricula){
-                return a;
+        for(Aluno a : alunos){
+            if(a != null && a.getMatricula() == matricula){
+            a.exibirInfo();
+            return a;
             }
         } return null;
     }
