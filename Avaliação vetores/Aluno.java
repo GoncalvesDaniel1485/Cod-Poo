@@ -25,10 +25,12 @@ public class Aluno{
 
     public void exibirInfo(){
         System.out.println("Nome: " + nome + "\nMatricula: " + matricula + "\nNotas: " + 
-        "\nNota 1: " + nota_1 + "\nNota 2: " + nota_2 + "\nMedia: " + calcularMedia() + "\nSituação: " + situacao());
+        "\nNota 1: " + nota_1 + "\nNota 2: " + nota_2 + "\nMedia: " + calcularMedia() 
+        + "\nSituação: " + situacao() + "\n");
     }
 
     public int getMatricula(){
         return matricula;
     }
+
 }
