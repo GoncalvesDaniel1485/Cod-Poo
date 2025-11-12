@@ -4,4 +4,8 @@ public class ClienteRegular extends Cliente {
         super(nome, valorDaCompra);
     }
 
+     public double calcularPagamento() {
+        return getValordaCompra();
+    }
+
 }
