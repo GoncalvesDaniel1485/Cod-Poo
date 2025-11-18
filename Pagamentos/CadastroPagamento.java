@@ -1,8 +1,8 @@
-public class cadastroPagamento {
+public class CadastroPagamento {
     private Pagamento[] pagamentos;
     private int qntd;
 
-    public cadastroPagamento(int capacidade) {
+    public CadastroPagamento(int capacidade) {
         this.pagamentos = new Pagamento[capacidade];
         this.qntd = 0;
     }
@@ -29,4 +29,5 @@ public class cadastroPagamento {
                             + pagamentos[i].processarPagamento() + "\n");
         }
     }
+
 }
